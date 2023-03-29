@@ -6,8 +6,6 @@ port=5432
 password=1234
 dbowner=postgres
 database=brussels
-datapath=../BerlinMOD
-scriptpath=../BerlinMOD
 
 scalefactor=0.005
 

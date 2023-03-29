@@ -6,8 +6,8 @@ port=5432
 password=1234
 dbowner=postgres
 database=brussels
-datapath=../BerlinMOD
-scriptpath=../BerlinMOD
+datapath=../data
+scriptpath=../MobilityDB-BerlinMOD/BerlinMOD
 
 export PGPASSWORD=$password
 
@@ -27,7 +27,7 @@ osm2pgsql -c -H $host -P $port -U $dbowner -d $database $datapath/brussels.osm
 
 psql -h $host -p $port -U $dbowner -d $database -f $scriptpath/brussels_preparedata.sql
 psql -h $host -p $port -U $dbowner -d $database -f $scriptpath/berlinmod_datagenerator.sql
-psql -h $host -p $port -U $dbowner -d $database -f $scriptpath/deliveries_datagenerator_PSYCONGROO.sql
+psql -h $host -p $port -U $dbowner -d $database -f $scriptpath/deliveries_datagenerator.sql
 
 
 
