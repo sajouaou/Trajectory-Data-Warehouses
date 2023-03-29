@@ -1,0 +1,3 @@
+[submodule "MobilityDB-BerlinMOD"]
+	path = MobilityDB-BerlinMOD
+	url = git@github.com:sajouaou/MobilityDB-BerlinMOD.git
