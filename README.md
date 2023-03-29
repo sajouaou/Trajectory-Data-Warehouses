@@ -19,7 +19,8 @@ How to use
 
 As a requirement you need [MobilityDB-BerlinMOD](https://github.com/MobilityDB/MobilityDB-BerlinMOD).
 
-#Data generation
+# Data generation
+
 In order to generate data with our conceptual model you can use this command with parameter s to define the scalefactor
 
 * Change directory to the scripts one 
