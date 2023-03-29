@@ -6,7 +6,7 @@ port=5432
 password=1234
 dbowner=postgres
 database=brussels
-
+scriptpath=../sql
 scalefactor=0.005
 
 while getopts ":s:" option; do
@@ -19,6 +19,7 @@ done
 export PGPASSWORD=$password
 
 ./berlinmod_setup.sh
-
+psql -h $host -p $port -U $dbowner -d $database -f $scriptpath/deliveries_dates.sql
 psql -h $host -p $port -U $dbowner -d $database -c "select deliveries_generate(scaleFactor := ${scalefactor})"
+psql -h $host -p $port -U $dbowner -d $database -c "select deliveries_alterDates()"
 

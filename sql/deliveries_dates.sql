@@ -142,6 +142,7 @@ CREATE FUNCTION deliveries_alterDates()
     RETURNS void LANGUAGE plpgsql STRICT AS $$
 DECLARE
 BEGIN
+    PERFORM deliveries_createDates();
     RAISE INFO 'Alter the Deliveries tables';
     ALTER TABLE Deliveries
     ADD  day_id  BIGINT;

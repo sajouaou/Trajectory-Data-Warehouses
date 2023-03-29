@@ -19,7 +19,7 @@ psql -h $host -p $port -U $dbowner  -d $database -c 'CREATE EXTENSION hstore'
 psql -h $host -p $port -U $dbowner  -d $database -c 'CREATE EXTENSION MobilityDB CASCADE'
 psql -h $host -p $port -U $dbowner  -d $database -c 'CREATE EXTENSION pgRouting'
 
-osm2pgrouting -h $host -p $port -U $dbowner -W $password -f $datapath/brussels.osm --dbname $database -c mapconfig_$database.xml
+osm2pgrouting -h $host -p $port -U $dbowner -W $password -f $datapath/brussels.osm --dbname $database -c $scriptpath/mapconfig_$database.xml
 osm2pgsql -c -H $host -P $port -U $dbowner -d $database $datapath/brussels.osm
 
 #pg_dump -h $host -p $port -U $dbowner -W -F t brussels > brussels.tar
