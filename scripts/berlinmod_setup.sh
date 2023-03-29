@@ -1,11 +1,8 @@
 #!/bin/bash
 # A script to setup the BerlinMOD generator
 
-host=localhost
-port=5432
-password=1234
-dbowner=postgres
-database=brussels
+
+source creditentials
 datapath=../data
 scriptpath=../MobilityDB-BerlinMOD/BerlinMOD
 

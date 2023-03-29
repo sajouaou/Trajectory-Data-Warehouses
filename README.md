@@ -19,7 +19,7 @@ How to use
 
 As a requirement you need [MobilityDB-BerlinMOD](https://github.com/MobilityDB/MobilityDB-BerlinMOD).
 
-# Data generation
+## Data generation
 
 In order to generate data with our conceptual model you can use this command with parameter s to define the scalefactor
 
@@ -29,3 +29,11 @@ In order to generate data with our conceptual model you can use this command wit
 * Run the scripts with a defined scalefactor (0.005 if not defined)
 
         ./berlinmod_runall.sh -s $scalefactor
+
+## Benchmark 
+
+In order to benchmark the data warehouse you can use the python script that run the 8 queries and output in terminal a latex table
+in order to do a benchmark on different scale there is the benchmark.sh script that can do that and output in different file the
+latex tables.
+        python3 benchmark_requests.py > "benchmark.tex"
+        ./benchmark.sh

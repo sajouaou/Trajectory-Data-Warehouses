@@ -1,11 +1,8 @@
 #!/bin/bash
 # A script to run the BerlinMOD generator with my personnal sql
 
-host=localhost
-port=5432
-password=1234
-dbowner=postgres
-database=brussels
+
+source creditentials
 scriptpath=../sql
 scalefactor=0.005
 

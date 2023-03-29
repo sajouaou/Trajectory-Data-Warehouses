@@ -1,11 +1,7 @@
 #!/bin/bash
 # A script to run the requests
 
-host=localhost
-port=5432
-password=1234
-dbowner=postgres
-database=brussels
+source creditentials
 scriptpath=../request
 export PGPASSWORD=$password
 
