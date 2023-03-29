@@ -24,7 +24,7 @@ In order to generate data with our conceptual model you can use this command wit
 
 * Change directory to the scripts one 
 
-    cd scripts
+        cd scripts
 * Run the scripts with a defined scalefactor (0.005 if not defined)
-   
-    ./berlinmod_runall.sh -s $scalefactor
+
+        ./berlinmod_runall.sh -s $scalefactor
