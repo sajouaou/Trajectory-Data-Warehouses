@@ -131,6 +131,7 @@ VALUES (TO_CHAR(datum, 'yyyymmdd')::INT ,
     on conflict (date_dim_id) do nothing;
 
 SELECT TO_CHAR(datum, 'yyyymmdd')::INT
+
 INTO date_id;
 RETURN date_id;
 END; $$;

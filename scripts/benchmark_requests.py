@@ -1,6 +1,5 @@
 import os
 
-os.system('./run_request.sh > output.txt')
 output_file = open("output.txt")
 extime = [round(float(line.split("ms")[0][6:-1].replace(',','.')) /1000,3) for line in output_file.readlines() if "Time: " in line]
 output_file.close()
