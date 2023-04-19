@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------
--- R8 IN COMMENT BECAUSE TAKE TOO LONG TIME Query complete 00:20:57.218
+-- R8 IN COMMENT BECAUSE TAKE TOO LONG TIME Query complete 1140052.119 ms (19:00.052)
 -------------------------------------------------------------------------
 
 SELECT D1.deliveryid, D2.deliveryid

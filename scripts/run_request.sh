@@ -6,7 +6,7 @@ scriptpath=../request
 export PGPASSWORD=$password
 
 
-for i in {1..8}
+for i in {1..7}
 do
-psql -h $host -p $port -U $dbowner -d $database -c '\timing' -f $scriptpath/${i}.sql
+psql -h $host -p $port -U $dbowner -d $database -c '\timing' -f $scriptpath/${i}.sql > output${i}.txt
 done

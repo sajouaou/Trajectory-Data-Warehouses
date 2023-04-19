@@ -1,9 +1,11 @@
 import os
-
-output_file = open("output.txt")
-extime = [round(float(line.split("ms")[0][6:-1].replace(',','.')) /1000,3) for line in output_file.readlines() if "Time: " in line]
-output_file.close()
-os.remove("output.txt")
+extime = []
+for i in range(1,8):
+    filename = "output" + str(i) + ".txt"
+    output_file = open(filename)
+    extime += [round(float(line.split("ms")[0][6:-1].replace(',','.')) /1000,3) for line in output_file.readlines() if "Time: " in line]
+    output_file.close()
+    os.remove(filename)
 
 latex_output = "\\begin{tabular}{ p{3cm}|p{4cm}  } \n"+\
                "\\hline\n" + \
