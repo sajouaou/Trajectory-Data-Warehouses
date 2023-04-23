@@ -20,10 +20,10 @@ First of all you need to install Grafana in order to have access to the Dashboar
          localhost:3000
 * Set a new password (The default one is admin/admin)
 * Add PostgreSQL DataSource
-  <img src="../doc/images/datasource.jpg" width="200" alt="Configuration Datasource" />
-  <img src="../doc/images/add_new_datasource.jpg" width="200" alt="Adding Datasource" />
+  <img src="../doc/images/datasource.jpg" alt="Configuration Datasource" />
+  <img src="../doc/images/add_new_datasource.jpg"  alt="Adding Datasource" />
 * Create a new DashBoard
-  <img src="../doc/images/new_dashboard.jpg" width="200" alt="New DashBoard" />
+  <img src="../doc/images/new_dashboard.jpg"  alt="New DashBoard" />
 
 
 ## Add Panel from sql request
@@ -31,9 +31,9 @@ First of all you need to install Grafana in order to have access to the Dashboar
 In order to use the request in this folder for the dashboard you need to :
 
 * Add a New Panel
-  <img src="../doc/images/add_panel.jpg" width="200" alt="Add a New Panel" />
+  <img src="../doc/images/add_panel.jpg"  alt="Add a New Panel" />
 * Select your PostgreSQL data source
 * Switch from builder to code
-  <img src="../doc/images/panel_to_code.jpg" width="200" alt="Add a New Panel" />
+  <img src="../doc/images/panel_to_code.jpg"  alt="Add a New Panel" />
 * Put Inside the code from sql file
 * Check comment in sql file to know which type of panel
