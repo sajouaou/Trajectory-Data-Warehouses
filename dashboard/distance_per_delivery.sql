@@ -1,0 +1,1 @@
+SELECT deliveryid,length(trip) as distance FROM deliveries ORDER BY distance LIMIT 10

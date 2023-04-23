@@ -1,0 +1,2 @@
+The scripts used here are primarily for personal use and are not necessarily up to date with the 
+technologies used, so I advise you not to refer to them and to check how to install each technology separately
