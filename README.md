@@ -17,7 +17,9 @@ purpose passwords are simple but do not take those scripts as secure.
 How to use
 -------------
 
-As a requirement you need [MobilityDB-BerlinMOD](https://github.com/MobilityDB/MobilityDB-BerlinMOD).
+## Dependency
+As a requirement you need [MobilityDB-BerlinMOD](https://github.com/MobilityDB/MobilityDB-BerlinMOD) to run the requests.
+You can use my personnal script for installation of the dependency.
 
 ## Data generation
 
